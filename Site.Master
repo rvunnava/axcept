@@ -1,0 +1,155 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="stable.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>axcept</title>
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/plain; charset=UTF-8"/>
+
+     <script src="_resources/jQuery-1.9.1.js"></script>    
+    <script src="_resources/jquery-ui-1.10.3.custom.min.js"></script> 
+
+    <link href="_resources/css/site.css" rel="stylesheet" />        
+    <link href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />            
+    <link href="_resources/css/jquery.handsontable.full.css" rel="stylesheet" />
+    <link href="_resources/css/tblAutoFit.css" rel="stylesheet" />  
+       
+    <script src="_resources/_plugins/handsontable/jquery.handsontable.full.js"></script>
+    <script src="_resources/_plugins/splitter/jQuery.splitter.js"></script>    
+    <script src="_resources/_plugins/jsTree/_lib/jquery.cookie.js"></script>
+    <script src="_resources/_plugins/jsTree/_lib/jquery.hotkeys.js"></script>
+    <script src="_resources/_plugins/jsTree/jquery.jstree.js"></script>
+    <script src="_resources/scripts/utilities.js"></script>
+    
+    <script src="_resources/_plugins/jqGrid/jquery.jqGrid.min.js"></script>
+    
+    <script src="_resources/scripts/editorGrid.js"></script>
+    <script src="_resources/scripts/tree.js"></script>
+    <script src="_resources/scripts/misc.ui.js"></script>
+
+    <link href="_resources/css/ui.jqgrid.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"/> 
+    
+     <script type="text/javascript">
+
+         
+         $(function () {
+             $(document).ready(function () {
+                 
+                 $("#page").css({ opacity: 1 });
+                 $("#ui-save").hide();
+                 $("#BodyContent_hiddenField").hide();
+                 $("#BodyContent_saveData").hide();
+                 var pathname = window.location.toString();
+                 if (pathname.indexOf("?path=") > 0) {                     
+                 }
+                                
+
+                 //resultsView();
+                 /*
+                 if ($("#resultSet").length != 0) {
+                     $("#ui-run").hide();
+                     $("#ui-results").hide();
+                 }*/
+
+                 $("#dialog-form").hide();
+
+                 $("#addTest").click(function () {
+                     $("#dialog-form").fadeIn();
+                     $("#gridHolder").css({ opacity: 0.5 });                     
+                 });
+
+                 $("#dialog-form").draggable();
+
+                 $("#dialog-form #cancel").click(function () {
+                     $("#dialog-form").fadeOut();
+                     $("#gridHolder").css({ opacity: 1 });
+                 });
+
+
+                 $("#treeCollapse").click(function () { collapseTreePanel()});
+
+
+                 $("#treeExpand").click(function () {
+                     $("#colleft").animate({ width: "20%", opacity: 1 }, 100);
+                     $("#showPanel").show("normal").animate({ width: "-10%", opacity: 0 }, 100);
+                     $("#colright").animate({ width: "79%", opacity: 1 }, 100);
+                 });
+
+                 $("#navigationLabel").click(function () {
+                     $("#treeHolder").toggleClass('collefttoggle');
+                 });    
+  
+             });//document.on ready
+
+
+
+         }); // function
+
+         function collapseTreePanel() {
+             $("#colleft").animate({ width: "-10%", opacity: 1 }, 100);
+             $("#showPanel").show("normal").animate({ width: "40px", opacity: 1 }, 300);
+             $("#colright").animate({ width: "97%", opacity: 1 }, 100
+                 , function () {
+                     calculateGridWidth("recordSet");
+                     calculateGridWidth("resultSet");
+                 });
+         }
+
+
+         function calculateGridWidth(strElement) {
+             var gridWidth = $("#gview_" + strElement + "> .ui-jqgrid-bdiv").width();
+             var colTotal = $("#" + strElement).width();
+             if (gridWidth > colTotal)
+                 $("#" + strElement).jqGrid('setGridWidth', gridWidth);
+
+         }
+
+
+
+
+
+     </script>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+    <body>    
+    <%--<img id="loading" alt="" src="images/ajax-loader.gif"/>--%>    
+    <form id="form1" runat="server">        
+    <div id="page">        
+        <div id="header">    
+           <%-- <span class="panelTitleTxt"> axcept </span>--%>             
+           <img id="axceptLogo" class="icon" alt="" src="images/logo9.png"/>
+            <asp:Label ID="userLabel" runat="server" Text="Anonymous User"></asp:Label>
+        </div>
+        
+        <div id="bodyContainer">
+            <div id="colleft">
+                <div id="treeControls">
+                    <div id="addTest" class="iclass" title="Add Test"><i class="fa fa-plus"></i></div>  
+                    <div id="deleteTest" class="iclass" title="Delete Test"><i class="fa fa-trash-o"></i></div>
+                    <div id="treeCollapse"><i class="fa fa-angle-double-left"></i></div>                    
+                </div>
+                <div id="treeHolder"></div>                
+            </div>            
+            <div id="showPanel">
+                <div id="treeExpand"><i class="fa fa-angle-double-right"></i></div>                  
+                <div id="navigationLabel"><span>Navigation Panel</span></div>  
+            </div>
+            <div id="colright" >
+                <asp:ContentPlaceHolder ID="BodyContent" runat="server">
+                </asp:ContentPlaceHolder>               
+                    <div id="loading"> Loading...</div>
+            </div>            
+        </div>
+    </div>
+    </form>
+</body>
+
+
+</html>

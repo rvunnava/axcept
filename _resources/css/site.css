@@ -1,0 +1,769 @@
+﻿    
+/* DEFAULTS 
+----------------------------------------------------------*/
+
+* 
+{
+margin:0; 
+padding:0; 
+}
+
+html
+{    
+    height: 100%;      
+}
+
+
+body
+{
+    height: auto;
+    height: 100%;
+    font-size: 14px;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    color: rgb(51, 51, 51);
+    overflow:hidden;    
+}
+
+form
+{
+    height:100%;   
+}
+
+
+/*Elements
+----------------------------------------------------------*/
+a
+{    
+    text-decoration: none;
+    color: #15c;
+} 
+
+a:hover
+{    
+    text-decoration: underline;
+} 
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+#page
+{   
+    height:100%;
+    width:100%;   
+    margin:0 auto;
+
+}
+
+#header
+{
+    color: white; 
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #d4d4d4;
+    /*background-image: linear-gradient(#fff,#f1f1f1);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff;', endColorstr='#f1f1f1',GradientType=0 );*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f9f9f9', EndColorStr='#f1f1f1'); 
+    background-image: linear-gradient(#f9f9f9,#f1f1f1);
+}
+
+span.panelTitleTxt {
+    padding: 10px 0px 0px 8px;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 500;
+    color: #777777;
+    text-shadow: 0 1px 0 #ffffff;
+    letter-spacing: 1.75px;
+}
+
+#userLabel {
+    float: right;
+    color: #777777;
+    margin-right: 22px;
+    margin-top: 13px;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+
+.icon {
+        padding: 0px 0px 0px 0px;
+    margin-left:5px;
+    margin-top:3px;
+}
+
+#header > i {
+    color: #777777;
+    padding: 13px 0px 0px 15px;
+    display: inline-block;
+    float: left;
+    font-size: 18px;
+}
+
+
+#bodyContainer
+{
+    height:95%;
+    width:100%;   
+    margin:0 auto;
+}
+
+#colleft {    
+    position:relative;
+    float:left;
+    width: 20%;
+    margin: 0px 0px 0px 0px;
+    background: white;
+    overflow: hidden;
+    height: 100%;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-right-color: #eee;
+    display:inline-block;
+}
+
+.collefttoggle {
+    position: fixed;
+    left: 40px;
+    z-index: 9;
+    width: 384px!important;
+    border: 1px solid #aaaaaa;
+    box-shadow: 0px 0px 12px rgba(0,0,0,.6);
+    height: auto !important;
+    max-height: 80%;
+    top: 81px;
+}
+
+
+#colright {
+    float: right;
+    height: 100%;
+    width: 79%;
+    margin: 0px 0px 0px 0px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+
+
+input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+    cursor:vertical-text;
+    background-color: #eeeeee;
+}
+
+
+#treeControls {
+    margin: 6px 4px 4px 5px;
+    height: 40px;    
+    z-index: 2;    
+     box-shadow: 0 2px 2px -1px rgba(0,0,0,.1);
+
+    /*background-color:#EEE;
+    background-image: linear-gradient(#f9f9f9,#f1f1f1);*/
+}
+
+
+#buttonholder {
+    margin: 6px 4px 4px 8px;
+    /*width: 97%;*/
+    height: 40px;
+    display: block;
+    box-shadow: 0 2px 2px -1px rgba(0,0,0,.1);
+}
+
+
+.customTooltip {background:black !important; color:white !important; top:81px !important;} 
+
+
+#treeHolder {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    overflow:auto;
+    height:95%;
+}
+
+#treeHolder li{
+line-height: 20px !important;
+}
+
+#colright > div { 
+    margin-left:0px; 
+}
+
+#testContent {
+    height:94%;
+    overflow:auto;
+
+}
+
+.gridPanel {
+    position: relative; /*top: 12%;
+    left: 7%;
+    margin-top: -50px;
+    margin-left: -50px;*/
+    margin-top: 60px;
+    margin-left: 49px;
+    width: 80%;
+    height: 90%;
+   
+}   
+
+
+/* Splitter bar
+----------------------------------------------------------*/
+.vsplitbar
+{
+    width: 5px;
+    background:  #ddd;
+   /* background-image: linear-gradient( #ddd , #bbb ); */
+}
+
+/* jsTree Customizations   
+----------------------------------------------------------*/
+
+.jstree li > a > .jstree-icon {   background: url('/images/folderclosed.png') no-repeat 0px 0px !important; } /*For closed folder*/
+
+li.jstree-open > a .jstree-icon { background:url("/images/folderopen.png") no-repeat 0px 0px !important;} /*For opned folder*/
+
+.jstree li a ins
+{
+   padding: 0px 2px 0px 2px;  /*To increase the space between folder icon and text*/
+}
+
+
+
+/* Button holder
+----------------------------------------------------------*/
+
+
+
+.iclass {
+    background-position: 0% 0%;
+    display:inline-block;
+    /*padding: 0 20px;    */
+    margin-right: 0;
+    border: 1px solid #E2E2E2;
+    float: left;
+    line-height: 30px;
+    height: 30px;
+    min-width: 54px;
+
+    /*background-image: linear-gradient(#fff,#f1f1f1); 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f9f9f9', EndColorStr='#f1f1f1'); 
+    background-image: linear-gradient(#fff,#f1f1f1); */    
+    background-repeat: repeat;
+    background-attachment: scroll;
+    /*background-color: #eee;
+    background-image: linear-gradient(#f9f9f9,#f1f1f1);*/
+    
+    /*gamil buttons*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f5f5', EndColorStr='#f1f1f1'); 
+    background-image:linear-gradient(#f5f5f5,#f1f1f1);
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+}
+
+
+#buttonholder i, #treeControls i, #showPanel i {
+    font-size: 1.2em;
+    opacity: .65;
+    padding-left: 20px;
+    line-height:1.9 !important;
+}
+
+#treeCollapse{
+    float: right !important;
+    background: white;    
+    border: 0px solid #E2E2E2;
+    font-size: 1.2em;
+    opacity: 1;
+    height: 75%;
+    min-width: 25px;
+    margin: 0px !important;
+}
+
+
+#treeCollapse i {
+    padding-left: 6px;
+    line-height: 1.5 !important;
+}
+
+
+#treeCollapse:hover, #treeExpand:hover, #navigationLabel:hover {    
+    background:#eee;
+    background: #E5E5E5;
+    cursor: default !important; 
+    border:1px solid;
+    border-color: #C9C9C9 #C9C9C9 #C9C9C9 #C9C9C9;
+    cursor:pointer;
+}
+
+
+#showPanel 
+{ 
+    display:none;
+    position: absolute;
+    z-index: 2;
+    float: left;
+    width: 40px;
+    height: 250px;
+    overflow: hidden;    
+    left: 0;
+    margin: 6px 4px 4px 3px;
+}
+
+#treeExpand {
+    height: 30px !important;
+    width:30px;
+    /*box-shadow: 0 2px 2px -1px rgba(0,0,0,.1);*/    
+    border: 1px solid #d4d4d4;
+    background-image: linear-gradient(#f5f5f5,#f1f1f1);
+}
+
+#treeExpand i {
+    padding-left: 9px;    
+}
+
+
+#navigationLabel {    
+    width: 184px;
+    top: 110.5px;
+    margin-left: -77.5px;
+    left: 0em;
+    text-align: right;
+    z-index: 5;
+    cursor: default;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);    
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);
+    -webkit-transform-origin: 50% 50%;
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    line-height: 30px;
+
+
+    background-repeat: repeat;
+    background-attachment: scroll;
+    /*background-color: #eee;
+    background-image: linear-gradient(#f9f9f9,#f1f1f1);*/
+    
+    /*gamil buttons*/
+    background:#f5f5f5;
+    background-image:linear-gradient(#f5f5f5,#f1f1f1);
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+
+    
+}
+
+#navigationLabel span {
+    line-height: 27px;
+    display: block;
+    padding: 0px 25px 3px 0px;    
+}
+
+
+.iclass:hover{
+    background: #E5E5E5;
+    cursor: default; 
+    border:1px solid;
+    border-color: #C9C9C9 #B2B2B2 #838383 #B2B2B2;
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    color: #191919;
+    opacity:2;
+}
+
+
+#buttonholder > a {
+    color: #333333;    
+}
+
+
+#buttonholder #secondGroup,#buttonholder #thirdGroup {
+    margin-left:30px;
+    display:inline-block;
+}
+
+
+#testSummary{    
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#testSummary th{
+    background:none !important;
+    border-bottom: 1px solid #CCC;
+    border-top: 1px solid #CCC;    
+}
+
+#testSummary td{     
+     width:50px;
+}
+
+
+#dataTable 
+{
+    padding-right:25px;
+}
+
+#configBox > #BodyContent_queryBox {
+    resize: both;
+    width: 96.8%;
+    height:180px;
+    font-family:"Helvetica Neue", "Helvetica", "Arial", "sans-serif" !important;
+    font-size: 14px !important;
+    margin-bottom:7px;
+    border: 1px solid #cccccc;
+    overflow-y:auto;
+}
+
+#configBox > #BodyContent_commentsContent {
+    border: 0px;
+    height: 100px;
+    width: 96.8%;
+    font-family: 'Helvetica Neue' , Helvetica, Arial, 'sans-serif !important';
+    font-size: 18px !important;
+    margin-bottom: 7px; 
+    /*background-color: white;*/
+    background-color: #FFFCF6;
+    border: 1px dotted #BF8660;
+}
+
+
+
+textarea {
+    padding-left: 8px;
+    padding-top:8px;
+}
+.textArea:hover {
+    cursor: text;
+}
+
+#loading{
+    position:fixed;
+    top:50%;
+    left:50%;
+    font-size: large;
+    font-weight: normal;
+    font-style: normal;
+    color: #777777;
+    /*z-index:1104;
+    opacity: .50;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    border-radius: 36px;*/
+}
+
+#keyCols 
+{
+    height:auto !important;
+    width:600px;    
+}
+
+#connBox {
+    height: auto !important;
+    width: 809px;
+}
+
+.heading:hover {
+    cursor:pointer;
+}
+.heading {
+    margin: 7px 0px 9px 0px;
+}
+
+#gridHolder {
+    width:100% ;
+    /*clear: both;
+    height:100%;
+    font-size:13px;
+    margin-bottom: 50px;
+    width:100% !important;*/
+}
+
+.handsontable th, .handsontable td {
+    font-size:13px !important;
+}
+
+
+
+#resultBthHolder 
+{
+    width:90%;
+    height:50px;
+    display:block;
+    padding-top:10px;
+}
+
+#resultBthHolder > div, #buttonholder > a {
+    /*background-position: 0% 0%;
+    display:inline-block;
+    padding: 0 20px;        
+    margin-right: 0;
+    float: left;
+    line-height: 30px;
+    background-color: #eee;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: linear-gradient(#f9f9f9,#f1f1f1);*/
+}
+
+#resultBthHolder > div:hover {
+    cursor:pointer;
+}
+
+
+
+input[type="checkbox"] {
+    margin: -2px 4px 0px 0px !important;
+    line-height: 0em !important;
+}
+
+
+/*Dialogs*/
+#dialog-form {
+    z-index: 10;
+    position: fixed;
+    top: 40%;
+    left: 45%;
+    border: 1px solid #aaaaaa;
+    background:white;
+    padding: .2em;
+    width: 300px;
+    box-shadow: 0px 0px 12px rgba(0,0,0,.6);
+}
+
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    border: 1px solid #aaaaaa;
+    width: 650px;
+    height: 130px;
+    z-index: 10;
+    padding: .2em;
+    box-shadow: 0px 0px 12px rgba(0,0,0,.6);
+    background:white;
+}
+
+#dialog-form .textBox {
+    margin: 25px 10px 17px 10px;
+    display: block;
+    z-index: 10;    
+    width: 250px;
+    line-height: 23px;
+
+}
+
+#dialog-form .button {
+    margin: 0px 0px 10px 10px;
+    border: 1px solid #d3d3d3;
+    font-weight: normal;
+    color: #555555;
+    display: inline-block;
+    z-index: 10;
+    padding: 0 20px;
+    background-image: linear-gradient(#f9f9f9,#f1f1f1);
+    line-height: 25px;
+}
+
+#dialog-form .button:hover {
+    cursor:pointer;
+}
+
+#urlText {
+    margin-top: 40px;
+    white-space: normal;
+    word-break: break-all;
+    margin-left:15px;
+    margin-right:15px;
+}
+
+.dialogClose {    
+    padding: 2px 2px 2px 2px;
+    top: .1em;
+    right: 5px;
+    position: absolute;
+}
+
+.dialogClose:hover {
+    cursor:pointer;
+    background-color: #E5E5E5;
+    border: 1px solid  rgb(207, 207, 207);
+}
+
+.dialogTitle {
+    border: 1px solid #aaaaaa;
+    background: #cccccc;
+    color: #222222;
+    font-weight: bold;
+    padding: .1em 1em;
+    position: relative;
+    line-height: 19px;
+}
+
+#treeHolder::-webkit-scrollbar
+{
+  width: 10px;  
+  height: 10px; 
+}
+
+#treeHolder::-webkit-scrollbar-track {
+    background: #E8E8EC;
+}
+
+#treeHolder {
+    scrollbar-base-color: #E8E8EC;
+    scrollbar-face-color:  #D0D1D7;
+    scrollbar-shadow-color:#E8E8EC;
+    scrollbar-arrow-color:black;
+    scrollbar-3dlight-color:#E8E8EC;
+    scrollbar-darkshadow-color:#E8E8EC;
+    scrollbar-highlight-color:#D0D1D7;
+    scrollbar-track-color:#E8E8EC;
+
+}
+
+#treeHolder::-webkit-scrollbar-thumb {
+    background-color: #D0D1D7;
+}
+
+.resultsCpanel #ui-edit {
+    display:none;
+}
+
+
+/*
+
+::-webkit-scrollbar
+{
+  width: 10px;  
+  height: 10px; 
+}
+
+::-webkit-scrollbar-track
+{
+  background:  white;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: #eee;
+}
+
+#treeHolder {
+    scrollbar-base-color: #eee;
+    scrollbar-face-color: #eee;
+    scrollbar-shadow-color: #eee;
+}*/
+
+#gbox_testHistory {
+    margin-left: 20px;
+    
+}
+
+.breadcrumb { 
+	list-style: none; 
+	overflow: hidden; 
+	font: 14px Helvetica, Arial, Sans-Serif;
+}
+.breadcrumb li { 
+	float: left; 
+}
+.breadcrumb li a {
+	color: #777777;
+	text-decoration: none; 
+	padding: 8px 0 8px 45px;
+	background: #eee;                   /* fallback color */
+	background: #eee; 
+	position: relative; 
+	display: block;
+	float: left;   
+}
+
+.breadcrumb li a:after { 
+	content: " "; 
+	display: block; 
+	width: 0; 
+	height: 0;
+	border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+	border-bottom: 50px solid transparent;
+	border-left: 30px solid #eee;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px; 
+	left: 100%;
+	z-index: 2; 
+}
+
+.breadcrumb li a:before { 
+	content: " "; 
+	display: block; 
+	width: 0; 
+	height: 0;
+	border-top: 50px solid transparent;       
+	border-bottom: 50px solid transparent;
+	border-left: 30px solid white;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px; 
+	margin-left: 1px;
+	left: 100%;
+	z-index: 1; 
+}
+
+#editGrid {
+    width:99% !important;
+    /*height:400px !important;*/
+}
+
+#testProperties {
+    margin-top:50px;
+    display:none;
+    max-width:600px;    
+}
+
+#testProperties > div {
+    margin-top:10px;    
+    width:100%;
+}
+
+.propertiesLabel {
+    display: inline-block;
+    padding-right: 16px;
+    text-align: right;
+    width: 124px;
+}
+
+.propertiesText {
+    line-height: 21px;
+    width: 200px;
+}
+
+#BodyContent_recordSetExport:hover {
+        cursor:default !important;
+        color: #191919;
+        opacity: 2;
+}
+
+#gridHolder #recordSetExportDiv {
+    display:none;
+}
+
+#gridHolder #resultSetExportDiv {
+    display:none;
+}
+
+.displayClass {
+    display:inline-block !important;
+}
+
+.hideClass {
+    display:none !important;
+}

@@ -1,0 +1,71 @@
+﻿/*-----------------------------------------------------------------------
+general table
+-----------------------------------------------------------------------*/
+table {
+    font-size: 14px !important;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif" !important;
+    color: #333333 !important;
+}
+
+
+table th:hover {
+    /*background: #dadada url(images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x;*/
+    background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x !important;
+}
+
+td {
+    white-space: pre;     
+    padding: 0.3em 0.5em;
+    border-right: 1px solid #CCC !important;
+    border-bottom: 1px solid #CCC !important;
+    /*padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left:4px;
+    padding-right:4px;*/
+}
+
+/*hovering over each row*/
+table tr:hover>td
+{
+    background-color: #EAECF5;
+}
+
+
+/*-----------------------------------------------------------------------
+jqgrid customizations
+-----------------------------------------------------------------------*/
+.ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    background: #F7F8FB !important;
+}
+
+/*-----------------------------------------------------------------------
+recordset customizations
+-----------------------------------------------------------------------*/
+
+table th, #gbox_recordSet th {
+    font-weight:bold;    
+    background-image: none !important;
+    border-right: 1px solid #CCC !important;
+    padding-top: .3em !important;
+    padding-bottom: .3em !important;  
+    background-color: #EEE;
+}
+
+/*-----------------------------------------------------------------------
+testHistory customizations
+-----------------------------------------------------------------------*/
+.testHistory {
+   border: 1px solid #CCC !important;
+}
+.testHistory th {
+    padding-right: 1em !important;
+    padding-left: 0.5em !important;
+    text-align:left;
+    border: 1px solid #CCC !important;
+}
+
+.pass { background: #AAFFAA !important;  }
+
+.fail { background: #FFAAAA !important; }
+
+.exception { background-color: rgb(255, 255, 170) !important; }

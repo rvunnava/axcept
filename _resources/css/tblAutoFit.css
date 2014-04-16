@@ -1,0 +1,248 @@
+﻿
+
+/*-----------------------------------------------------------------------
+general table
+-----------------------------------------------------------------------*/
+table {
+    font-size: 14px !important;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif" !important;
+    color: #333333 !important;
+}
+
+
+table th:hover {
+    /*background: #dadada url(images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x;*/
+    background: #e6e6e6 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x !important;
+}
+
+td {
+    white-space: pre;     
+    padding: 0.15em 0.5em;
+    border-right: 1px solid #CCC !important;
+    border-bottom: 1px solid #CCC !important;
+    /*padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left:4px;
+    padding-right:4px;*/       
+}
+
+/*-----------------------------------------------------------------------
+jqgrid customizations
+-----------------------------------------------------------------------*/
+.ui-jqgrid-bdiv { 
+    width:100% !important; background: rgb(207, 207, 207) !important;
+    /*background:rgb(171,171,171) !important;*/
+}
+
+.ui-jqgrid-hdiv { width:100% !important; }
+
+.ui-jqgrid-sdiv { width:100% !important; }
+
+
+/*-----------------------------------------------------------------------
+recordset customizations
+-----------------------------------------------------------------------*/
+
+#gbox_recordSet { width:97.5% !important; }
+
+#gview_recordSet { width:100% !important; }
+
+#recordSet_toppager { width:100% !important; }
+
+#gview_recordSet .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    background: #F7F8FB !important;
+}
+
+
+table th, #gbox_recordSet th {
+    font-weight: bold !important;
+    background-image: none !important;
+    border-right: 1px solid #CCC !important;
+    padding-top: .3em !important;
+    padding-bottom: .3em !important; /*background-color: #EEE;*/
+    background-color: #EEE;
+}
+
+.ui-jqgrid-hbox {
+    background-color: #EEE;
+}
+
+#gbox_recordSet tr:hover>td
+{
+    background-color: #EAECF5;
+}
+
+#recordSet td[aria-describedby='recordSet_rn'] {
+    background: #EEE !important;
+}
+
+#t_recordSet {
+    width:100% !important;
+    background: #EEE;
+    height:26px;
+}
+
+
+.tableButtons {
+    display:inline-block;
+     margin-top:1px;
+    margin-left:2px;  
+    padding-right: 4px;
+}
+
+.tableButtons i{
+    font-size: 1.3em;
+    opacity: .65;
+    padding-left: 9px;
+    padding-right: 9px;
+    line-height: 1.5;
+    margin-top:1px;
+    padding-top:0px;
+
+}
+
+.tableButtons:hover {    
+    background: #DFDFDF;
+    cursor: default !important;
+    border: 1px solid;
+    border-color: #C9C9C9 #B2B2B2 #838383 #B2B2B2;
+    box-shadow: 3px 3px 2px -1px rgba(0,0,0,.1);
+    text-decoration: none;
+    color: #191919;
+    opacity: 2;
+}
+
+.tableButtons #chngroup {
+    width: 150px;
+    height: 20px;
+    display:none;
+    margin-bottom: 1px;
+
+}
+
+
+/*-----------------------------------------------------------------------
+testHistory customizations
+-----------------------------------------------------------------------*/
+#testHistory a {    
+    color: #15c;    
+}
+
+#testHistory a:hover{    
+    text-decoration:underline;
+}
+
+#testHistory tr {
+    background: white; 
+}
+
+#testHistory tr:hover > td 
+{       
+    /*border-bottom: 0.05em solid #6C6C6C !important;
+    border-top: 0.05em solid #6C6C6C !important;*/    
+}
+
+.jqgfirstrow td {
+    /*padding:0px !important;*/
+}
+
+#testHistory td {
+    padding-bottom: 0em;    
+    border-bottom: 0px solid #CCC !important;        
+}
+
+#testHistory td:last-child {
+    /*border-right: 1px solid #CCC !important;*/
+}
+
+#testHistory .jqfoot td {
+    padding: 0.12em 0.5em;
+}
+
+#testHistory .jqgroup {
+    /*background:yellow;
+    background: #d5eaf0;*/
+    background: #737373;    
+    color:white;
+}
+
+
+
+.passTD {
+    color:green;
+}
+
+#testHistory td[aria-describedby='testHistory_Test Name'], #testHistory td[aria-describedby='testHistory_Duration'],
+ #testHistory td[aria-describedby='testHistory_myDate'], #testHistory td[aria-describedby='testHistory_Test Owner']
+{
+    background:white !important;    
+}
+
+#t_testHistory {
+    background: #E6E6E6;
+    height: 26px;
+}
+
+
+/*-----------------------------------------------------------------------
+resultset customizations
+-----------------------------------------------------------------------*/
+
+#gbox_resultSet { width:97.5% !important; }
+
+#gview_resultSet { width:100% !important; }
+
+#resultSet_toppager { width:100% !important; }
+
+
+
+#t_resultSet { 
+        background: #E6E6E6;
+    height: 26px;
+    width:100% !important;
+}
+
+.exception { background-color: rgb(255, 255, 170) !important; }
+
+.pass { background: #AAFFAA;  }
+
+.fail { background: #FFAAAA !important; }
+
+.exp, .act {
+color: #C08080;
+padding-left: 5px;
+}
+
+hr 
+{
+margin: 0.7em 0.2em;
+border: 0;
+border-top: 1px inset #eeeeee;
+border-bottom: 1px inset #eeeeee;
+}
+
+
+#resultSet tr:hover > td {
+            border-bottom: 0.09em ridge #6C6C6C !important;
+    border-top: 0.09em ridge #6C6C6C !important;    
+}
+
+#resultSet td { 
+    background: #AAFFAA;
+}
+
+#resultSet .missing { background: white;}
+
+.exception { background: white  !important; }
+
+
+#resultSet .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    opacity:0.65 !important;
+}
+
+
+
+/*delete later*/
+#testHistory .ui-icon-circlesmall-minus { display:none; }
+.jqgroup > td { padding-left: 7px !important; }
+/*delete later*/
