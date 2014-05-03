@@ -3007,7 +3007,7 @@
             var rs = "", xm, xs, processor, support;
             // TODO: IE9 no XSLTProcessor, no document.recalc
             /* Raghu 11.26.13>> if IE version is 9 perform xsl transformation. */
-            if (msieversion() == 9) {
+            if (msieversion() >= 9) {
                 if (window.ActiveXObject) {
                     var xslt = new ActiveXObject("Msxml2.XSLTemplate");
                     var xmlDoc = new ActiveXObject("Msxml2.DOMDocument");
