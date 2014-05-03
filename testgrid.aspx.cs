@@ -25,6 +25,13 @@ namespace stable
         public Dictionary<string, string> queryVar = new Dictionary<string, string>();
 
 
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+
+
         [WebMethod]
         [System.Web.Script.Services.ScriptMethod(ResponseFormat = System.Web.Script.Services.ResponseFormat.Json)]
         public static string testGridData(string strPath,string evalConfigStr)        
@@ -242,6 +249,9 @@ namespace stable
             string xmlTags="";
             if(doc.SelectSingleNode("root/tags")!=null)
                 xmlTags = "\n<tags>\n" + doc.SelectSingleNode("root/tags").InnerXml + "\n</tags>\n";
+
+            xmlText = xmlText.Replace("<query>", "<query><![CDATA[");
+            xmlText = xmlText.Replace("</query>", "]]></query>");
 
             xmlText = "<root>" + xmlTags + xmlText + "\n</root>";
             File.WriteAllText(xmlPath, xmlText);

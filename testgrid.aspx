@@ -1,5 +1,6 @@
 ﻿
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="testgrid.aspx.cs" Inherits="stable.sample" MasterPageFile="~/Site.Master"%>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="testgrid.aspx.cs" Inherits="stable.sample" MasterPageFile="~/Site.Master" validateRequest="false"%>
+
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
     <script src="_resources/scripts/testgrid.js"></script>    
