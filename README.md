@@ -2,5 +2,6 @@
 
 
 <h3> What is axcept? </h3>
+<hr>
 It’s a high-automation tool that describes desired software behavior in terms of “test verbs”, with aim of delivering “Software that matters”
 
