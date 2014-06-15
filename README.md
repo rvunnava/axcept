@@ -21,13 +21,14 @@ Following are the list of databases tested and can work with axcept.
 axcept currently only suports database tests. 
 Following are the list of databases tested and can work with axcept. 
 <ul>
-  <li>MS Sql Server</li>
-  <li>Oracle</li>
-  <li>DB2</li>
-  <li>My Sql</li>
+  <li>Word like editor to write user stories, behavioral requirements and comments <a href="https://github.com/rvunnava/axcept/issues/1"> Ticket #1 </a></li>
+  <li>Define test fixtures and assign a test clause with required parameters 
+  <a href="https://github.com/rvunnava/axcept/issues/7"> Ticket #7, </a>
+  <a href="https://github.com/rvunnava/axcept/issues/8"> Ticket #8 </a></li>
+  <li>xml validations <a href="https://github.com/rvunnava/axcept/issues/9"> Ticket #9 </a></li>
+  <li>.net runner <a href="https://github.com/rvunnava/axcept/issues/10"> Ticket #10 </a></li>
+  <li>pdf validations <a href="https://github.com/rvunnava/axcept/issues/11"> Ticket #11 </a></li>
 </ul>
-** axcept is an extensible system and may work with any databases that are not listed above.
-
 
 
 <h1> Getting Started </h1>
