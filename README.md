@@ -7,7 +7,7 @@ axcept is a high-automation Behavior-driven development tool that provides a sha
 It uses keywords with parameters (or test clauses) to describe the software behavior in a way that will also be understood by developers and thus make the requirements documents directly executable as a collection of tests.
 
 <h3>Tool Objective</h3>
-axcept objective is to make requirements documents directly executable as a collection of tests and test clauses
+axcept's objective is to make requirements documents directly executable as a collection of tests or test clauses
 
 <h3>Features:</h3>
 axcept currently only suports database tests. 
@@ -33,7 +33,7 @@ Following are the list of databases tested and can work with axcept.
   <li>pdf validations <a href="https://github.com/rvunnava/axcept/issues/11"> Ticket #11 </a></li>
 </ul>
 
-<h1> Getting Started </h1>
-<h3>Installation</h3>
+<h1>User Guide</h1>
+<h3>Ge</h3>
 
 
