@@ -5,6 +5,10 @@
 axcept is a high-automation Behavior-driven development tool that provides a shared process for Software developers, Business Analysts and QA Teams to to collaborate on software development, with the aim of delivering "software that matters". 
 
 It uses keywords with parameters (or test clauses) to describe the software behavior in a way that will also be understood by developers and thus make the requirements documents directly executable as a collection of tests.
+
+<h3>Tool Objective</h3>
+axcept objective is to make requirements documents directly executable as a collection of tests and test clauses
+
 <h3>Features:</h3>
 axcept currently only suports database tests. 
 Following are the list of databases tested and can work with axcept. 
@@ -15,6 +19,7 @@ Following are the list of databases tested and can work with axcept.
   <li>My Sql</li>
 </ul>
 ** axcept is an extensible system and may work with any databases that are not listed above.
+
 <h3>Roadmap:</h3>
 axcept currently only suports database tests. 
 Following are the list of databases tested and can work with axcept. 
@@ -28,8 +33,7 @@ Following are the list of databases tested and can work with axcept.
   <li>pdf validations <a href="https://github.com/rvunnava/axcept/issues/11"> Ticket #11 </a></li>
 </ul>
 
-
 <h1> Getting Started </h1>
-
+<h3>Installation</h3>
 
 
