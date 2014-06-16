@@ -21,8 +21,7 @@ Following are the list of databases tested and can work with axcept.
 ** axcept is an extensible system and may work with any databases that are not listed above.
 
 <h3>Roadmap:</h3>
-axcept currently only suports database tests. 
-Following are the list of databases tested and can work with axcept. 
+axcept is a new born open source project started on December 2013.  Following is roadmap of axcept tool 
 <ul>
   <li>Word like editor to write user stories, behavioral requirements and comments <a href="https://github.com/rvunnava/axcept/issues/1"> Ticket #1 </a></li>
   <li>Define test fixtures and assign a test clause with required parameters 
@@ -34,6 +33,7 @@ Following are the list of databases tested and can work with axcept.
 </ul>
 
 <h1>User Guide</h1>
-<h3>Ge</h3>
+<h3>Installation and Getting Started</h3>
+
 
 
