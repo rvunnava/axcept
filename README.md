@@ -33,7 +33,15 @@ axcept is a new born open source project started on December 2013.  Following is
 </ul>
 
 <h1>User Guide</h1>
-<h3>Installation and Getting Started</h3>
-
-
-
+<h3> Setup & Installation</h3>
+<ol>
+  <li>Download latest version of axcept</li>
+  <li>Unzip folder to your hard drive</li>
+  <li>Point IIS to the folder that is holding the axcept documents.<br/> For more details on setting up IIS <a href="http://support.microsoft.com/kb/323972">Click here </a></li>
+  <li>To Test if IIS is properly setup, on the same computer/server IIS is started type <font color="red"> localhost:[port given during setup]/testgrid.aspx </font> <br/> (If site did not open, there is some issue with the IIS Setup. Please go back to IIS set up instructions) 
+  <p style="color:red;">This is a paragraph.</p>
+  
+  
+  </li>
+  <li>To Open axcept from different computer: Type in the computer name used above <br/> [Computer Name]:[Port Number]/testgrid.aspx</li>
+  <ol>
