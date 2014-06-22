@@ -52,4 +52,4 @@ axcept is a new born open source project started on December 2013.  Following is
   <li>To Open axcept from different computer: Type in the computer name used above <br/> [Computer Name]:[Port Number]/testgrid.aspx</li>
 <ol>
 
-  <h3>Working with axcept. General Functions</h3>
+<h3>Working with axcept</h3>
