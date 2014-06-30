@@ -67,7 +67,7 @@ The next six month goal of this tool is to have a free form word like editor whe
   </ul>
   </td>
   <td align="center">
-    <a href="https://github.com/rvunnava/axcept-documentation/raw/master/ppt/CreateNewTest.ppsx">Click here</a></td>
+    <a href="https://github.com/rvunnava/axcept-documentation/raw/master/ppt/EditTest.ppsx">Click here</a></td>
 </tr>
 
 <tr>
@@ -114,9 +114,6 @@ The next six month goal of this tool is to have a free form word like editor whe
 </tr>
 
 </table>
-
-
-
 
 
 
