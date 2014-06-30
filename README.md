@@ -2,7 +2,7 @@
 
 
 <h1> What is axcept? </h1>
-axcept is a high-automation Behavior-driven development tool that provides a shared process for Software developers, Business Analysts and QA Teams to to collaborate on software development, with the aim of delivering "software that matters". 
+axcept is a high-automation Behavior-driven development tool that provides a shared process for Software developers, Business Analysts and QA Teams to collaborate on software development, with the aim of delivering "software that matters". 
 
 It uses keywords with parameters (or test clauses) to describe the software behavior in a way that will also be understood by developers and thus make the requirements documents directly executable as a collection of tests.
 
@@ -44,4 +44,28 @@ axcept is a new born open source project started on December 2013.  Following is
 </ol>
 
 <h3>Working with axcept</h3>
-<h4>Gemeral Features</h4>
+<h4>Database Testing</h4>
+<table width="400px">
+<tr>
+  <td align="left">
+  <b>Create Tests</b>
+  <ul>
+    <li>Create a Test Page</li>
+    <li>Create a Suie Page</li>
+    <li>Difference between Test and Suite Page</li>
+  </ul>
+  </td>
+  <td>
+    <a href="https://github.com/rvunnava/axcept-documentation/raw/master/ppt/CreateNewTest.ppsx"><img style="border:0;" src="https://github.com/rvunnava/axcept-documentation/raw/master/images/powerpoint.ico" alt="HTML tutorial" width="42" height="42"></a></td>
+</tr>
+
+
+
+
+</table>
+
+
+
+
+
+
