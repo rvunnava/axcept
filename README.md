@@ -48,8 +48,8 @@ axcept is a new born open source project started on December 2013.  Following is
 <table width="400px">
 <tr>
   <td align="left"><b>Creating New Test Pages</b></td>
-  <td>
-    <a href="https://github.com/rvunnava/axcept-documentation/raw/master/ppt/CreateNewTest.ppsx"><img style="border:0;" src="https://github.com/rvunnava/axcept-documentation/raw/master/images/powerpoint.ico" alt="HTML tutorial" width="42" height="42"></a></td>
+  <td align="center">
+    <a href="https://github.com/rvunnava/axcept-documentation/raw/master/ppt/CreateNewTest.ppsx">Click here</a></td>
 </tr>
 
 <tr>
@@ -60,8 +60,8 @@ axcept is a new born open source project started on December 2013.  Following is
     <li>Build Expected Results</li>
   </ul>
   </td>
-  <td>
-    <a href="https://github.com/rvunnava/axcept-documentation/raw/master/ppt/CreateNewTest.ppsx"><img style="border:0;" src="https://github.com/rvunnava/axcept-documentation/raw/master/images/powerpoint.ico" alt="HTML tutorial" width="42" height="42"></a></td>
+  <td align="center">
+    <a href="https://github.com/rvunnava/axcept-documentation/raw/master/ppt/CreateNewTest.ppsx">Click here</a></td>
 </tr>
 
 <tr>
@@ -73,12 +73,12 @@ axcept is a new born open source project started on December 2013.  Following is
     <li>Key vs Non key columns</li>
   </ul>
   </td>
-  <td>
-    <a href="https://github.com/rvunnava/axcept-documentation/raw/master/ppt/ImplimentTests.ppsx"><img style="border:0;" src="https://github.com/rvunnava/axcept-documentation/raw/master/images/powerpoint.ico" alt="HTML tutorial" width="42" height="42"></a></td>
+  <td align="center">
+    <a href="https://github.com/rvunnava/axcept-documentation/raw/master/ppt/ImplimentTests.ppsx">Click here</a></td>
 </tr>
 
 <tr>
-  <td align="left"><b>Running tests</b>
+  <td align="left" width="550"><b>Running tests</b>
   <ul>
     <li>Running from UI</li>
     <li>Running from command prompt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
@@ -91,8 +91,8 @@ axcept is a new born open source project started on December 2013.  Following is
   
   
   </td>
-  <td>
-    <a href="https://github.com/rvunnava/axcept-documentation/raw/master/ppt/ImplimentTests.ppsx"><img style="border:0;" src="https://github.com/rvunnava/axcept-documentation/raw/master/images/powerpoint.ico" alt="HTML tutorial" width="42" height="42"></a></td>
+  <td width="120" align="center">
+    <a href="https://github.com/rvunnava/axcept-documentation/raw/master/ppt/ImplimentTests.ppsx">Click here</a></td>
 </tr>
 
 
