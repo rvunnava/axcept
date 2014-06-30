@@ -47,17 +47,56 @@ axcept is a new born open source project started on December 2013.  Following is
 <h4>Database Testing</h4>
 <table width="400px">
 <tr>
-  <td align="left">
-  <b>Create Tests</b>
+  <td align="left"><b>Creating New Test Pages</b></td>
+  <td>
+    <a href="https://github.com/rvunnava/axcept-documentation/raw/master/ppt/CreateNewTest.ppsx"><img style="border:0;" src="https://github.com/rvunnava/axcept-documentation/raw/master/images/powerpoint.ico" alt="HTML tutorial" width="42" height="42"></a></td>
+</tr>
+
+<tr>
+  <td align="left"><b>Editing axcept Pages</b>
   <ul>
-    <li>Create a Test Page</li>
-    <li>Create a Suie Page</li>
-    <li>Difference between Test and Suite Page</li>
+    <li>Enter Comments</li>
+    <li>Write sql queries</li>
+    <li>Build Expected Results</li>
   </ul>
   </td>
   <td>
     <a href="https://github.com/rvunnava/axcept-documentation/raw/master/ppt/CreateNewTest.ppsx"><img style="border:0;" src="https://github.com/rvunnava/axcept-documentation/raw/master/images/powerpoint.ico" alt="HTML tutorial" width="42" height="42"></a></td>
 </tr>
+
+<tr>
+  <td align="left"><b>Implement the tests</b>
+  <ul>
+    <li>Page Types</li>
+    <li>Connecting to Database</li>
+    <li>Page Variables</li>
+    <li>Key vs Non key columns</li>
+  </ul>
+  </td>
+  <td>
+    <a href="https://github.com/rvunnava/axcept-documentation/raw/master/ppt/ImplimentTests.ppsx"><img style="border:0;" src="https://github.com/rvunnava/axcept-documentation/raw/master/images/powerpoint.ico" alt="HTML tutorial" width="42" height="42"></a></td>
+</tr>
+
+<tr>
+  <td align="left"><b>Running tests</b>
+  <ul>
+    <li>Running from UI</li>
+    <li>Running from command prompt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+  </ul>
+  <b>Results History</b>
+  <ul>
+    <li>Test Results</li>
+    <li>Suite Results</li>
+  </ul>
+  
+  
+  </td>
+  <td>
+    <a href="https://github.com/rvunnava/axcept-documentation/raw/master/ppt/ImplimentTests.ppsx"><img style="border:0;" src="https://github.com/rvunnava/axcept-documentation/raw/master/images/powerpoint.ico" alt="HTML tutorial" width="42" height="42"></a></td>
+</tr>
+
+
+
 
 
 
