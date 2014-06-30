@@ -1,3 +1,4 @@
+
 <img src="https://github.com/rvunnava/axcept/raw/master/images/axcept.png" alt="axcept">
 
 
@@ -21,7 +22,7 @@ Following are the list of databases tested and can work with axcept.
 ** axcept is an extensible system and may work with any databases that are not listed above.
 
 <h3>Roadmap:</h3>
-axcept is a new born open source project started on December 2013.  Following is roadmap of axcept tool 
+axcept is a new open source project started on December 2013.  Following is roadmap of axcept tool 
 <ul>
   <li>Word like editor to write user stories, behavioral requirements and comments <a href="https://github.com/rvunnava/axcept/issues/1"> Ticket #1 </a></li>
   <li>Define test fixtures and assign a test clause with required parameters 
@@ -81,7 +82,7 @@ axcept is a new born open source project started on December 2013.  Following is
   <td align="left" width="550"><b>Running tests</b>
   <ul>
     <li>Running from UI</li>
-    <li>Running from command prompt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+    <li>Running from command prompt</li>
   </ul>
   <b>Results History</b>
   <ul>
@@ -92,14 +93,20 @@ axcept is a new born open source project started on December 2013.  Following is
   
   </td>
   <td width="120" align="center">
-    <a href="https://github.com/rvunnava/axcept-documentation/raw/master/ppt/ImplimentTests.ppsx">Click here</a></td>
+    <a href="https://github.com/rvunnava/axcept-documentation/raw/master/ppt/RunningTests.ppsx">Click here</a></td>
 </tr>
 
-
-
-
-
-
+<tr>
+  <td align="left"><b>Miscellaneous Features</b>
+  <ul>
+    <li>New data snapshot</li>
+    <li>Custom function for sql queries</li>
+  </ul>
+  
+  </td>
+  <td align="center">
+    <a href="https://github.com/rvunnava/axcept-documentation/raw/master/ppt/MiscFeatures.ppsx">Click here</a></td>
+</tr>
 
 </table>
 
