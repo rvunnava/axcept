@@ -7,8 +7,10 @@ axcept is a high-automation Behavior-driven development tool that provides a sha
 
 It uses keywords with parameters (or test clauses) to describe the software behavior in a way that will also be understood by developers and thus make the requirements documents directly executable as a collection of tests.
 
-<h3>Tool Objective</h3>
-axcept's objective is to make requirements documents directly executable as a collection of tests or test clauses
+Learn More about Behavior-driven Development in agile projects <br/>
+<a href="http://en.wikipedia.org/wiki/Behavior-driven_development">Wikepedia</a> <br/>
+<a href="http://dannorth.net/introducing-bdd/">dannorth.net</a>
+
 
 <h3>Features:</h3>
 axcept currently only suports database tests. 
