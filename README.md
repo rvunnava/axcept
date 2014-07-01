@@ -27,7 +27,8 @@ Following are the list of databases tested and can work with axcept.
 axcept is a new open source project started on December 2013 with main objective of making requirements directly executable as a collection of tests or test clauses.  <br/>
 
 axcept currently only support database tests, and many BDD related tool features are currently under development. 
-The next six month goal of this tool is to have a free form word like editor where tests can be written in form of keywords or test clauses, and validate variety of documents like xml's, pdf's and run tests against API written in C#
+The next six month goal of this tool is to have a free form word like editor where tests can be written in form of keywords or test clauses, and validate variety of documents like xml's, pdf's and run tests against API written in C#. <br/><br/>
+Following are the list of tickets created to detail each feature mentioned in the Road map.
 <ul>
   <li>Word like editor to write user stories, behavioral requirements and comments <a href="https://github.com/rvunnava/axcept/issues/1"> Ticket #1 </a></li>
   <li>Define test fixtures and assign a test clause with required parameters 
